@@ -23,7 +23,7 @@ Live site: https://jessetnroberts.github.io/flairs-special-track/
 
 1. Create a public repo named `flairs-special-track` under `JesseTNRoberts`.
 2. Push these files to the `main` branch, at the repo root.
-3. Settings → Pages → Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
+3. Settings → Pages → Source: "GitHub Actions". The workflow in `.github/workflows/pages.yml` publishes the site on every push to `main`.
 
 If you use a different repo name, update the URL in `index.html` (canonical, `og:url`, `og:image`, JSON-LD), `sitemap.xml`, `robots.txt` and `cfp.txt`.
 
