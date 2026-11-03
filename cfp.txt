@@ -1,0 +1,113 @@
+CALL FOR PAPERS
+
+Deliberative and Generative AI: Hybrids and Foundations
+Special Track at FLAIRS-40, the 40th International Florida Artificial
+Intelligence Research Society Conference
+St. Pete Beach, Florida, USA, May 24-27, 2027
+
+Track page:      https://jessetnroberts.github.io/flairs-special-track/
+Conference:      https://www.flairs-40.info/
+Submission site: https://easychair.org/conferences/?conf=flairs40
+                 (select the "Deliberative and Generative AI: Hybrids and
+                 Foundations" track)
+
+----------------------------------------------------------------------
+THE CALL
+----------------------------------------------------------------------
+
+Deliberative AI, the classical, symbolic tradition of state-space search,
+proceeds through recursive generate-and-test cycles: candidates are
+proposed, evaluated, pruned, and refined toward a goal. Generative AI,
+epitomized by transformer-based large language models, is instead
+characterized by a weak or trivial test step, producing outputs by
+sampling from learned conditional probability distributions.
+
+A growing body of work treats these paradigms as complements rather than
+competitors. Search can structure and constrain LLM generation, and LLMs
+can serve as flexible components within a broader search process: as
+generators of successors, as scorers, or as tie-breakers. At the same
+time, an important question remains largely open: how, if at all, does
+deliberative, Type 2 behavior emerge from a fundamentally generative,
+Type 1 system?
+
+Following "State-Space Search and Transformer-Based AI Hybridizations"
+(Fisher, Moore, and Roberts, ACS 2026; available on the track page),
+this special track invites papers
+that explore, build, evaluate, or theorize about hybrid architectures
+combining state-space search and transformer-based generation. It equally
+invites papers on the foundational question of how Type 1 and Type 2
+processing relate to and give rise to one another. We welcome systems
+papers, empirical studies, and position or theoretical contributions
+addressing questions such as:
+
+  - How can LLMs serve as generators or evaluators within classical
+    search algorithms?
+  - How can search principles improve or control LLM decoding?
+  - What is the theoretical relationship between LLM inference and
+    generic state-space search?
+  - By what mechanisms might a generative system come to behave
+    deliberatively?
+
+----------------------------------------------------------------------
+TOPICS (including, but not limited to)
+----------------------------------------------------------------------
+
+  - Proposer-verifier, generate-and-test, and LLM-modulo architectures
+    pairing LLMs with symbolic checkers, solvers, or simulators
+  - LLM-guided search for planning, routing, program synthesis, and
+    mathematical proof
+  - Search-structured decoding: beam search, lookahead, and Monte
+    Carlo-style rollouts applied to LLM generation
+  - Scoring and filtering of generated candidates, including
+    self-assessment, auxiliary discriminative models, and tool-based
+    scoring
+  - Reinforcement learning that folds evaluative, test-like signal back
+    into generative models
+  - Retrieval- and generation-augmented reasoning (RAG/GAR)
+  - Neurosymbolic integration, e.g. concept nets or commonsense graphs
+    paired with generative reasoning
+  - Evidence for latent planning or lookahead in transformer
+    representations
+  - Theoretical and empirical characterizations of Type 1 and Type 2
+    processing, and of how Type 2 might emerge from Type 1
+  - Computational cost and efficiency trade-offs in hybrid systems
+  - Applications in mathematics, transportation and robotics planning,
+    scholarly and bibliographic reasoning, and interactive narrative
+
+----------------------------------------------------------------------
+IMPORTANT DATES (23:59 Anywhere on Earth)
+----------------------------------------------------------------------
+
+  January 22, 2027   Abstract registration (required to submit a paper)
+  February 1, 2027   Full and short paper submission
+  March 9, 2027      Paper acceptance notification
+  March 15, 2027     Poster paper submission (2 pages + references)
+  March 22, 2027     Poster notification
+  April 5, 2027      Camera-ready, author registration, early registration
+  May 24-27, 2027    Conference
+
+----------------------------------------------------------------------
+SUBMISSION
+----------------------------------------------------------------------
+
+  Full paper:   up to 6 pages + references (up to 7 in proceedings;
+                20-minute talk)
+  Short paper:  up to 4 pages + references (up to 5 in proceedings;
+                10-minute talk)
+  Poster paper: up to 2 pages + references
+
+Papers must use the FLAIRS-40 template, be anonymized for double-blind
+review, and be submitted as PDF through EasyChair under this track.
+Submissions must be original and not under review elsewhere during the
+FLAIRS review period. At least one author per submission must be
+available to review, and at least one author must present in person.
+Proceedings are published by Florida Online Journals and indexed in DBLP
+and Scopus. Full rules: https://www.flairs-40.info/call-for-papers
+
+----------------------------------------------------------------------
+ORGANIZERS AND CONTACT
+----------------------------------------------------------------------
+
+  Jesse T. Roberts, Tennessee Tech University    jtroberts@tntech.edu
+  Kyle A. Moore, Vanderbilt University           kyle.a.moore@vanderbilt.edu
+  Douglas H. Fisher, Vanderbilt University       douglas.h.fisher@vanderbilt.edu

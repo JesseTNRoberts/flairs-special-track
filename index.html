@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Call for Papers: Deliberative and Generative AI: Hybrids and Foundations | FLAIRS-40 Special Track 2027</title>
+<meta name="description" content="Call for papers for the FLAIRS-40 special track on Deliberative and Generative AI: hybrids of state-space search and LLMs, and the foundations of Type 1 and Type 2 processing. St. Pete Beach, FL, May 24–27, 2027. Abstracts due January 22, 2027.">
+<meta name="keywords" content="FLAIRS-40, FLAIRS 2027, special track, call for papers, CFP, LLM, large language models, state-space search, deliberative AI, generative AI, neurosymbolic AI, dual-process, Type 1, Type 2, planning, chain of thought, proposer-verifier, LLM-modulo">
+<meta name="author" content="Douglas H. Fisher, Kyle A. Moore, Jesse T. Roberts">
+<link rel="canonical" href="https://jessetnroberts.github.io/flairs-special-track/">
+<meta name="theme-color" content="#19213A">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deliberative and Generative AI: Hybrids and Foundations — FLAIRS-40 Special Track">
+<meta property="og:description" content="Call for papers on hybrids of state-space search and transformer LLMs, and on how Type 2 deliberation relates to Type 1 generation. Abstracts due Jan 22, 2027.">
+<meta property="og:url" content="https://jessetnroberts.github.io/flairs-special-track/">
+<meta property="og:image" content="https://jessetnroberts.github.io/flairs-special-track/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2319213A'/%3E%3Cpath d='M16 7v8m0 0-6 7m6-7 6 7' stroke='%23E3A72F' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='7' r='3' fill='%23fff'/%3E%3Ccircle cx='10' cy='23' r='3' fill='%238FA6EA'/%3E%3Ccircle cx='22' cy='23' r='3.2' fill='%23E3A72F'/%3E%3C/svg%3E">
+
+<link rel="preload" href="fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Deliberative and Generative AI: Hybrids and Foundations (FLAIRS-40 Special Track)",
+  "description": "Special track at the 40th International Florida Artificial Intelligence Research Society Conference on hybrid systems combining state-space search and transformer-based generation, and on the foundations of Type 1 and Type 2 processing.",
+  "startDate": "2027-05-24",
+  "endDate": "2027-05-27",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "St. Pete Beach",
+    "address": { "@type": "PostalAddress", "addressLocality": "St. Pete Beach", "addressRegion": "FL", "addressCountry": "US" }
+  },
+  "url": "https://jessetnroberts.github.io/flairs-special-track/",
+  "superEvent": { "@type": "Event", "name": "FLAIRS-40: The 40th International FLAIRS Conference", "url": "https://www.flairs-40.info/", "startDate": "2027-05-24", "endDate": "2027-05-27" },
+  "organizer": [
+    { "@type": "Person", "name": "Douglas H. Fisher", "affiliation": "Vanderbilt University" },
+    { "@type": "Person", "name": "Kyle A. Moore", "affiliation": "Vanderbilt University" },
+    { "@type": "Person", "name": "Jesse T. Roberts", "affiliation": "Tennessee Tech University" }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/source-serif-4-latin-opsz-normal.woff2) format("woff2")}
+@font-face{font-family:"Source Serif 4";font-style:italic;font-weight:200 900;font-display:swap;src:url(fonts/source-serif-4-latin-opsz-italic.woff2) format("woff2")}
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/public-sans-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Public Sans";font-style:italic;font-weight:100 900;font-display:swap;src:url(fonts/public-sans-latin-wght-italic.woff2) format("woff2")}
+:root{
+  --paper:#F2F4F7;
+  --white:#FFFFFF;
+  --ink:#19213A;
+  --ink-2:#232C49;
+  --slate:#566079;
+  --rule:#D5DAE3;
+  --cobalt:#2E54C9;
+  --cobalt-soft:#8FA6EA;
+  --marigold:#E3A72F;
+  --marigold-deep:#9A6A0B;
+  --pruned:#BFC6D2;
+  --on-ink:#E9ECF4;
+  --on-ink-dim:#A9B2C9;
+
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --measure:68ch;
+  --gutter:clamp(1.25rem, 4vw, 3rem);
+  --wrap:78rem;
+  --bar-h:3.75rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--bar-h) + 1rem)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:1.0625rem;line-height:1.6;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--cobalt);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:20}
+.skip:focus{left:1rem;top:1rem}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:10;background:rgba(242,244,247,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:1.5rem;min-height:var(--bar-h)}
+.bar .home{font-weight:700;color:var(--ink);text-decoration:none;font-size:.95rem;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.bar nav{margin-left:auto;display:flex;gap:1.25rem;font-size:.92rem}
+.bar nav a{color:var(--slate);text-decoration:none;white-space:nowrap;padding:.35rem 0}
+.bar nav a:hover{color:var(--ink)}
+.bar .submit-mini{flex:none;font-size:.9rem;font-weight:600;background:var(--ink);color:#fff;text-decoration:none;padding:.45rem .9rem;border-radius:999px}
+.bar .submit-mini:hover{background:var(--cobalt)}
+@media (max-width:760px){.bar nav{display:none}.bar .submit-mini{margin-left:auto}.bar .long{display:none}}
+
+/* ---------- page grid: content + sticky side column ---------- */
+.layout{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:minmax(0,1fr) 21rem;gap:clamp(2.5rem,4vw,4rem);align-items:start}
+.side{position:sticky;top:calc(var(--bar-h) + 1.25rem);margin-top:clamp(2rem,4vw,3rem);margin-bottom:3rem}
+@media (max-width:1023px){
+  .layout{display:block}
+  .side{display:none}
+}
+@media (min-width:1024px){
+  .narrow-only{display:none!important}
+  .hero .lede{margin-bottom:0}
+}
+
+/* ---------- side panels ---------- */
+.panel{background:var(--ink);color:var(--on-ink);border-radius:1rem;padding:1.25rem 1.4rem 1.4rem;max-height:calc(100vh - var(--bar-h) - 2.5rem);overflow:auto;transition:opacity .35s ease, transform .35s ease, visibility 0s linear 0s}
+.panel-stack{position:relative}
+.panel[aria-hidden="true"]{position:absolute;top:0;left:0;right:0;opacity:0;transform:translateY(8px);visibility:hidden;pointer-events:none;transition:opacity .25s ease, transform .25s ease, visibility 0s linear .25s}
+@media (prefers-reduced-motion:reduce){.panel,.panel[aria-hidden="true"]{transition:none;transform:none}}
+.panel h2{font-family:var(--serif);font-weight:600;font-size:1.3rem;line-height:1.2;margin:0 0 .75rem;color:#fff}
+.panel a{color:#fff}
+.panel .pager{display:flex;gap:.35rem;margin:0 0 .9rem}
+.panel .pager span{height:4px;flex:1;border-radius:4px;background:#3A4466}
+.panel .pager .on{background:var(--marigold)}
+.panel dl{margin:0}
+.panel dl div{padding:.5rem 0;border-top:1px solid #333D5E}
+.panel dl div:first-child{border-top:0;padding-top:0}
+.panel dt{font-size:.82rem;color:var(--on-ink-dim)}
+.panel dd{margin:.05rem 0 0;font-family:var(--serif);font-size:1.04rem;line-height:1.32}
+.panel .side-actions{display:grid;gap:.55rem;margin-top:1rem}
+.panel .btn-on-ink{display:block;text-align:center;font-weight:600;text-decoration:none;padding:.6rem 1rem;border-radius:.6rem;border:2px solid #fff}
+.panel .btn-on-ink.primary{background:var(--marigold);border-color:var(--marigold);color:var(--ink)}
+.panel .btn-on-ink.primary:hover{background:#F0B94A;border-color:#F0B94A}
+.panel .btn-on-ink:not(.primary):hover{background:var(--ink-2)}
+.panel .note{font-size:.85rem;color:var(--on-ink-dim);margin:1rem 0 0;line-height:1.45}
+.panel .next-up{background:var(--ink-2);border-radius:.6rem;padding:.75rem .9rem;margin:0 0 1.1rem;font-size:.95rem;line-height:1.4}
+.panel .next-up b{display:block;font-family:var(--serif);font-size:1.15rem;color:#fff}
+
+.side-dates{list-style:none;margin:0;padding:0}
+.side-dates li{display:grid;grid-template-columns:5.6rem 1fr;gap:.75rem;padding:.55rem 0;border-top:1px solid #333D5E;font-size:.93rem;line-height:1.35}
+.side-dates li:first-child{border-top:0}
+.side-dates time{font-family:var(--serif);font-weight:600;color:#fff;font-size:1rem}
+.side-dates .is-next time{color:var(--marigold)}
+.side-dates .is-next .what{color:#fff;font-weight:600}
+.side-dates .is-past{opacity:.5}
+.side-dates .is-past .what{text-decoration:line-through;text-decoration-thickness:1px}
+
+/* tree */
+.tree-fig{margin:0 0 1rem;padding:0 0 .85rem;border-bottom:1px solid #333D5E}
+.tree{width:100%;height:auto;max-height:150px;display:block}
+.tree .e{fill:none;stroke:var(--cobalt-soft);stroke-width:2.5;stroke-linecap:round}
+.tree .n{fill:var(--ink);stroke:var(--cobalt-soft);stroke-width:2.5}
+.tree .root{fill:#fff;stroke:#fff}
+.tree .pr.e{stroke:#56607E;stroke-dasharray:4 6}
+.tree .pr.n{stroke:#56607E;fill:var(--ink)}
+.tree .x{stroke:#6B7594;stroke-width:2.2;stroke-linecap:round}
+.tree .path{fill:none;stroke:var(--marigold);stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.tree .goal{fill:var(--marigold);stroke:var(--marigold);stroke-width:2.5}
+.tree .tok{font-family:var(--serif);font-style:italic;font-size:17px;fill:var(--on-ink-dim)}
+.legend{display:flex;flex-wrap:wrap;gap:.3rem 1rem;margin:.5rem 0 0;padding:0;list-style:none;font-size:.8rem;color:var(--on-ink-dim)}
+.legend li{display:flex;align-items:center;gap:.4rem}
+.sw{display:inline-block;width:1.2rem;height:0;border-top:3px solid}
+.sw.gen{border-color:var(--cobalt-soft)}
+.sw.pru{border-top-style:dashed;border-color:#6B7594}
+.sw.sel{border-top-width:5px;border-color:var(--marigold);border-radius:3px}
+
+/* animation: one orchestrated build of the tree on load */
+.anim .e,.anim .n,.anim .x,.anim .goal,.anim .tok{opacity:0;animation:appear .45s ease-out forwards}
+.anim .path{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.1s cubic-bezier(.6,.05,.3,1) 2.5s forwards}
+.anim .pr{animation:appear .45s ease-out forwards, fade .6s ease-in forwards}
+.anim .l1{animation-delay:.25s}
+.anim .l2{animation-delay:.8s}
+.anim .l3{animation-delay:1.35s}
+.anim .pr.l1{animation-delay:.25s,1.9s}
+.anim .pr.l2{animation-delay:.8s,1.9s}
+.anim .pr.l3{animation-delay:1.35s,1.9s}
+.anim .x{animation-delay:1.9s}
+.anim .goal{animation-delay:3.4s}
+@keyframes appear{from{opacity:0}to{opacity:1}}
+@keyframes fade{from{opacity:1}to{opacity:.7}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.tree .pr{opacity:.7}
+@media (prefers-reduced-motion:reduce){
+  .anim *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}
+  .anim .pr{opacity:.7!important}
+}
+
+/* ---------- hero (compact) ---------- */
+.hero{padding:clamp(2rem,4vw,3rem) 0 clamp(2rem,4vw,2.75rem)}
+.context{margin:0 0 1rem;color:var(--slate);font-size:1rem}
+.context a{color:var(--ink);font-weight:600}
+h1{
+  font-family:var(--serif);font-weight:600;font-optical-sizing:auto;
+  font-size:clamp(2.4rem,5vw,3.9rem);line-height:1.04;letter-spacing:-.022em;margin:0;
+}
+h1 .and{font-weight:400;font-style:italic;color:var(--slate)}
+h1 .sub{display:block;font-weight:400;color:#2D3550}
+.lede{font-family:var(--serif);font-size:clamp(1.12rem,1.7vw,1.25rem);line-height:1.55;max-width:40rem;margin:1.25rem 0 1.5rem;color:#2D3550}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:1rem;white-space:nowrap;text-decoration:none;padding:.8rem 1.15rem;border-radius:.6rem;border:2px solid var(--ink)}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover{background:var(--cobalt);border-color:var(--cobalt)}
+.btn-secondary{color:var(--ink);background:transparent}
+.btn-secondary:hover{background:var(--white)}
+
+/* narrow-screen facts strip (replaces the side column below 1024px) */
+.facts{background:var(--ink);color:var(--on-ink);border-radius:1rem;padding:1.4rem 1.4rem;margin:0 0 2rem}
+.facts dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.5rem;margin:0}
+.facts dt{font-size:.82rem;color:var(--on-ink-dim)}
+.facts dd{margin:0;font-family:var(--serif);font-size:1.08rem;line-height:1.3}
+.facts a{color:#fff}
+
+/* ---------- sections ---------- */
+main section{padding:clamp(2.5rem,5vw,4rem) 0;border-top:1px solid var(--rule)}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.12;letter-spacing:-.015em;margin:0 0 1.25rem}
+h3{font-family:var(--serif);font-weight:600;font-size:1.25rem;line-height:1.25;margin:0 0 .5rem}
+.prose{max-width:var(--measure)}
+.prose p{font-family:var(--serif);font-size:1.13rem;line-height:1.7;margin:0 0 1.1em}
+
+.questions{list-style:none;margin:1.75rem 0 0;padding:0;max-width:var(--measure);border-left:3px solid var(--marigold)}
+.questions li{font-family:var(--serif);font-style:italic;font-size:1.13rem;line-height:1.5;padding:.4rem 0 .4rem 1.25rem}
+
+/* spectrum of topics */
+.spectrum-head{display:flex;justify-content:space-between;gap:1rem;font-weight:600;font-size:.92rem;margin:2rem 0 .6rem}
+.spectrum-head span:last-child{text-align:right}
+.axis{height:8px;border-radius:8px;background:linear-gradient(90deg,var(--cobalt) 0%,#7C78B8 50%,var(--marigold) 100%)}
+.topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin-top:1.5rem}
+.topics h3{font-size:1.1rem}
+.topics ul{margin:0;padding:0;list-style:none}
+.topics li{padding:.55rem 0;border-top:1px solid var(--rule);line-height:1.45;font-size:.97rem}
+.topics .col-note{color:var(--slate);font-size:.9rem;margin:0 0 .7rem}
+@media (max-width:1180px) and (min-width:1024px), (max-width:820px){.topics{grid-template-columns:1fr}.topics > div + div{margin-top:.5rem}}
+.small-note{color:var(--slate);max-width:var(--measure);margin:1.75rem 0 0}
+
+/* dates timeline (narrow screens only; the side column carries it on wide screens) */
+.timeline{list-style:none;margin:0;padding:0;max-width:44rem}
+.timeline li{display:grid;grid-template-columns:10.5rem 1fr;gap:1.25rem;padding:1rem 0;border-top:1px solid var(--rule)}
+.timeline li:last-child{border-bottom:1px solid var(--rule)}
+.timeline time{font-family:var(--serif);font-weight:600;font-size:1.12rem}
+.timeline .what{line-height:1.45}
+.timeline .what small{display:block;color:var(--slate);font-size:.92rem;margin-top:.15rem}
+.timeline .is-next time{color:var(--marigold-deep)}
+.timeline .is-next .what{font-weight:600}
+.timeline .is-past{color:var(--slate)}
+.tz{color:var(--slate);margin-top:1rem;font-size:.95rem}
+@media (max-width:560px){.timeline li{grid-template-columns:1fr;gap:.15rem}}
+
+/* steps */
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;max-width:var(--measure)}
+.steps > li{counter-increment:s;position:relative;padding:0 0 1.6rem 3.25rem}
+.steps > li::before{content:counter(s);position:absolute;left:0;top:-.1rem;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--white);border:2px solid var(--ink);display:grid;place-items:center;font-weight:700;font-size:.95rem}
+.steps > li:not(:last-child)::after{content:"";position:absolute;left:1.02rem;top:2.2rem;bottom:.2rem;width:2px;background:var(--rule)}
+.steps h3{font-family:var(--sans);font-size:1.05rem;font-weight:700;margin:0 0 .3rem}
+.steps p{margin:0 0 .5rem}
+.track-name{display:inline;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:1.9;background:var(--white);border:1px solid var(--rule);border-radius:.4rem;padding:.1rem .45rem;font-weight:600}
+.formats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0 0}
+.formats div{background:var(--white);border:1px solid var(--rule);border-radius:.75rem;padding:1rem 1.1rem}
+.formats b{display:block;font-family:var(--serif);font-size:1.12rem;margin-bottom:.25rem}
+.formats span{color:var(--slate);font-size:.93rem;line-height:1.45;display:block}
+@media (max-width:760px){.formats{grid-template-columns:1fr}}
+.policy{margin:1.75rem 0 0;padding:0 0 0 1.2rem;max-width:var(--measure);color:#2D3550}
+.policy li{margin:.35rem 0}
+
+/* paper */
+.paper{display:grid;grid-template-columns:9.5rem minmax(0,1fr);gap:1.75rem;align-items:start}
+.paper-cover{display:block;background:var(--white);border:1px solid var(--rule);border-radius:.3rem;box-shadow:0 10px 24px -14px rgba(25,33,58,.45);overflow:hidden;line-height:0}
+.paper-cover:hover{border-color:var(--cobalt)}
+.paper-cover img{width:100%;height:auto;display:block}
+.paper .cite{font-family:var(--serif);font-size:1.1rem;line-height:1.55;margin:0 0 1rem}
+.abstract{margin:0 0 1rem;padding:1rem 1.2rem;background:var(--white);border:1px solid var(--rule);border-radius:.6rem;max-width:var(--measure)}
+.abstract h3{font-family:var(--sans);font-size:.95rem;font-weight:700;margin:0 0 .35rem}
+.abstract p{margin:0;font-family:var(--serif);font-size:1.05rem;line-height:1.6}
+.paper .why{max-width:var(--measure);margin:0 0 1.25rem}
+@media (max-width:620px){.paper{grid-template-columns:1fr}.paper-cover{width:9rem}}
+
+/* organizers */
+.people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin:0;padding:0;list-style:none}
+.people li{border-top:3px solid var(--ink);padding-top:1rem}
+.people .name{font-family:var(--serif);font-size:1.25rem;font-weight:600;display:block}
+.people .aff{color:var(--slate);display:block;margin:.15rem 0 .4rem;line-height:1.4;font-size:.95rem}
+.people a{font-size:.95rem;word-break:break-all}
+@media (max-width:1180px) and (min-width:1024px), (max-width:760px){.people{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--ink);color:#C9CFDD;padding:3rem 0;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between}
+footer a{color:#fff}
+footer p{margin:.2rem 0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="home" href="#top">FLAIRS-40 · Deliberative &amp; Generative AI</a>
+    <nav aria-label="Sections">
+      <a href="#call">Call</a>
+      <a href="#topics">Topics</a>
+      <a class="narrow-only" href="#dates">Dates</a>
+      <a href="#submit">Submit</a>
+      <a href="#paper">Paper</a>
+      <a href="#organizers">Contact</a>
+    </nav>
+    <a class="submit-mini" href="https://easychair.org/conferences/?conf=flairs40">Submit<span class="long"> on EasyChair</span></a>
+  </div>
+</header>
+
+<div class="layout">
+<main id="main">
+  <div class="hero" id="top">
+    <p class="context">Special track at <a href="https://www.flairs-40.info/">FLAIRS-40</a>, the 40th International Florida AI Research Society Conference · St. Pete Beach, FL · May 24–27, 2027</p>
+    <h1>Deliberative <span class="and">and</span> Generative AI<span class="sub">Hybrids and Foundations</span></h1>
+    <p class="lede">A call for papers on systems that combine state-space search with transformer-based generation, and on how deliberative, Type&nbsp;2 behavior relates to, and might emerge from, generative, Type&nbsp;1 computation. Abstracts are due <strong>January 22, 2027</strong>.</p>
+    <div class="actions narrow-only">
+      <a class="btn btn-primary" href="https://easychair.org/conferences/?conf=flairs40">Submit a paper on EasyChair</a>
+      <a class="btn btn-secondary" href="https://www.flairs-40.info/">FLAIRS-40 conference site</a>
+    </div>
+  </div>
+
+  <div class="facts narrow-only">
+    <dl>
+      <div><dt>Conference</dt><dd><a href="https://www.flairs-40.info/">FLAIRS-40</a>, May 24–27, 2027</dd></div>
+      <div><dt>Location</dt><dd>St. Pete Beach, Florida, USA</dd></div>
+      <div><dt>Proceedings</dt><dd>Florida Online Journals, indexed in DBLP and Scopus</dd></div>
+      <div><dt>Review</dt><dd>Double-blind, by the track program committee</dd></div>
+    </dl>
+  </div>
+
+  <section id="call">
+    <h2>The call</h2>
+    <div class="prose">
+      <p>Deliberative AI, the classical, symbolic tradition of state-space search, proceeds through recursive generate-and-test cycles: candidates are proposed, evaluated, pruned, and refined toward a goal. Generative AI, epitomized by transformer-based large language models, is instead characterized by a weak or trivial test step, producing outputs by sampling from learned conditional probability distributions.</p>
+      <p>A growing body of work treats these paradigms as complements rather than competitors. Search can structure and constrain LLM generation, and LLMs can serve as flexible components within a broader search process: as generators of successors, as scorers, or as tie-breakers. At the same time, an important question remains largely open: how, if at all, does deliberative, Type&nbsp;2 behavior emerge from a fundamentally generative, Type&nbsp;1 system?</p>
+      <p>Following <a href="#paper"><i>State-Space Search and Transformer-Based AI Hybridizations</i></a> (Fisher, Moore, and Roberts, ACS 2026), this special track invites papers that explore, build, evaluate, or theorize about hybrid architectures combining state-space search and transformer-based generation. It equally invites papers on the foundational question of how Type&nbsp;1 and Type&nbsp;2 processing relate to and give rise to one another. We welcome systems papers, empirical studies, and position or theoretical contributions.</p>
+    </div>
+    <ul class="questions" aria-label="Guiding questions">
+      <li>How can LLMs serve as generators or evaluators within classical search algorithms?</li>
+      <li>How can search principles improve or control LLM decoding?</li>
+      <li>What is the theoretical relationship between LLM inference and generic state-space search?</li>
+      <li>By what mechanisms might a generative system come to behave deliberatively?</li>
+    </ul>
+  </section>
+
+  <section id="topics">
+    <h2>Topics of interest</h2>
+    <p class="prose" style="margin:0;font-family:var(--serif);font-size:1.13rem;line-height:1.65">We see two ends of a spectrum as especially interesting and welcome work anywhere along it: building working hybrid architectures at one end, and characterizing Type&nbsp;1 and Type&nbsp;2 processing at the other.</p>
+
+    <div class="spectrum-head" aria-hidden="true"><span>Building hybrid systems</span><span>Foundations of Type&nbsp;1 and Type&nbsp;2</span></div>
+    <div class="axis" aria-hidden="true"></div>
+
+    <div class="topics">
+      <div>
+        <h3>Hybrid architectures</h3>
+        <p class="col-note">Search and generation working together</p>
+        <ul>
+          <li>Proposer-verifier, generate-and-test and LLM-modulo architectures pairing LLMs with symbolic checkers, solvers or simulators</li>
+          <li>LLM-guided search for planning, routing, program synthesis and mathematical proof</li>
+          <li>Retrieval- and generation-augmented reasoning (RAG and GAR) as search-adjacent architectures</li>
+          <li>Neurosymbolic integration, such as concept nets or commonsense graphs paired with generative reasoning</li>
+          <li>Applications in mathematics, transportation and robotics planning, scholarly and bibliographic reasoning, and interactive narrative</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Search inside generation</h3>
+        <p class="col-note">Where the two meet in a single algorithm</p>
+        <ul>
+          <li>Search-structured decoding: beam search, lookahead and Monte Carlo-style rollouts applied to LLM generation</li>
+          <li>Scoring and filtering of generated candidates, including self-assessment, auxiliary discriminative models and tool-based scoring</li>
+          <li>Reinforcement learning that folds evaluative, test-like signal back into generative models</li>
+          <li>Computational cost and efficiency trade-offs in hybrid search-generation systems</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Foundations</h3>
+        <p class="col-note">What the categories mean and how they relate</p>
+        <ul>
+          <li>Theoretical and empirical characterizations of Type&nbsp;1 and Type&nbsp;2 processing</li>
+          <li>How Type&nbsp;2 behavior might emerge from a Type&nbsp;1 substrate, in theory or as demonstrated empirically</li>
+          <li>Evidence for latent planning or lookahead within transformer representations</li>
+          <li>Connections to cognitive architectures and dual-process theories of cognition</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small-note">These topics are examples, not limits. If your work bears on the combination, unification or comparative analysis of search-based and generation-based AI, it belongs here.</p>
+  </section>
+
+  <section id="dates" class="narrow-only">
+    <h2>Important dates</h2>
+    <ol class="timeline dates-list">
+      <li data-date="2027-01-22"><time datetime="2027-01-22">January 22, 2027</time><span class="what">Abstract registration<small>Required: a full paper cannot be submitted without a registered abstract.</small></span></li>
+      <li data-date="2027-02-01"><time datetime="2027-02-01">February 1, 2027</time><span class="what">Full and short paper submission</span></li>
+      <li data-date="2027-03-09"><time datetime="2027-03-09">March 9, 2027</time><span class="what">Paper acceptance notification</span></li>
+      <li data-date="2027-03-15"><time datetime="2027-03-15">March 15, 2027</time><span class="what">Poster paper submission<small>2 pages plus references.</small></span></li>
+      <li data-date="2027-03-22"><time datetime="2027-03-22">March 22, 2027</time><span class="what">Poster notification</span></li>
+      <li data-date="2027-04-05"><time datetime="2027-04-05">April 5, 2027</time><span class="what">Camera-ready papers, author registration and early registration</span></li>
+      <li data-date="2027-05-27"><time datetime="2027-05-24">May 24–27, 2027</time><span class="what">Conference in St. Pete Beach, Florida</span></li>
+    </ol>
+    <p class="tz">All deadlines are 23:59 Anywhere on Earth (AoE). The <a href="https://www.flairs-40.info/important-dates">FLAIRS-40 important dates page</a> is authoritative if anything changes.</p>
+  </section>
+
+  <section id="submit">
+    <h2>How to submit</h2>
+    <ol class="steps">
+      <li>
+        <h3>Prepare an anonymized PDF</h3>
+        <p>Use the FLAIRS-40 author template from the <a href="https://www.flairs-40.info/call-for-papers">FLAIRS-40 call for papers</a>. Review is double-blind, so remove author names, affiliations and identifying self-references.</p>
+      </li>
+      <li>
+        <h3>Register your abstract on EasyChair by January 22</h3>
+        <p>Go to the <a href="https://easychair.org/conferences/?conf=flairs40">FLAIRS-40 EasyChair site</a>, start a new submission, and select the track <span class="track-name">Deliberative and Generative AI: Hybrids and Foundations</span>. Submissions sent to the main track are not reviewed by this track's committee.</p>
+      </li>
+      <li>
+        <h3>Upload the full paper by February 1</h3>
+        <p>Add the PDF to your registered submission. Poster papers follow the later March 15 deadline.</p>
+      </li>
+    </ol>
+
+    <div class="formats" aria-label="Paper formats">
+      <div><b>Full paper</b><span>Up to 6 pages plus references. Up to 7 pages in the proceedings, with a 20-minute talk.</span></div>
+      <div><b>Short paper</b><span>Up to 4 pages plus references. Up to 5 pages in the proceedings, with a 10-minute talk.</span></div>
+      <div><b>Poster paper</b><span>Up to 2 pages plus references. Presented in the poster session.</span></div>
+    </div>
+
+    <ul class="policy">
+      <li>Submissions must be original and not under review elsewhere during the FLAIRS review period.</li>
+      <li>At least one author of each submission must be available to serve as a reviewer.</li>
+      <li>Each accepted paper needs an author registration, and at least one author must present in person.</li>
+      <li>Full papers that are not accepted may still be accepted as short papers or posters.</li>
+    </ul>
+    <p class="small-note">The <a href="https://www.flairs-40.info/call-for-papers">FLAIRS-40 call for papers</a> has the complete submission rules.</p>
+  </section>
+
+  <section id="paper">
+    <h2>The motivating paper</h2>
+    <div class="paper">
+      <a class="paper-cover" href="paper/fisher-moore-roberts-acs2026.pdf"><img src="paper/first-page.png" width="510" height="660" alt="First page of the paper, State-Space Search and Transformer-Based AI Hybridizations"></a>
+      <div>
+        <p class="cite">Douglas H. Fisher, Kyle A. Moore, and Jesse T. Roberts. 2026. <i>State-Space Search and Transformer-Based AI Hybridizations.</i> In Proceedings of the Thirteenth Annual Conference on Advances in Cognitive Systems (ACS-2026).</p>
+        <div class="abstract">
+          <h3>Abstract</h3>
+          <p>The paper surveys hybrid deliberative (≈symbolic) and reflexive (≈generative) AI systems, focusing on the combination of state-space search, a workhorse of deliberative AI systems, and transformer-based LLMs, an important class of generative AI. We also speculate within the dual-process framing, notably on Type 2, deliberative computation emerging from Type 1, reflexive computation; and introducing PLuMCoT (Primed Lookahead using Multiple Chains of Thought).</p>
+        </div>
+        <p class="why">The paper casts LLM generation as a form of greedy search, shows where LLMs can implement the components of a search process, and closes by asking how Type&nbsp;2 computation might emerge from Type&nbsp;1. It frames the track's questions, but prior familiarity with it is not expected of submitters.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="paper/fisher-moore-roberts-acs2026.pdf">Read the paper (PDF, 20 pages)</a>
+        </div>
+        <p class="small-note" style="margin-top:1rem">Camera-ready version, hosted here until the ACS-2026 proceedings are online. © 2026 Cognitive Systems Foundation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="organizers">
+    <h2>Organizers and contact</h2>
+    <ul class="people">
+      <li><span class="name">Jesse T. Roberts</span><span class="aff">Department of Computer Science, Tennessee Tech University</span><a href="mailto:jtroberts@tntech.edu">jtroberts@tntech.edu</a></li>
+      <li><span class="name">Kyle A. Moore</span><span class="aff">College of Connected Computing, Vanderbilt University</span><a href="mailto:kyle.a.moore@vanderbilt.edu">kyle.a.moore@vanderbilt.edu</a></li>
+      <li><span class="name">Douglas H. Fisher</span><span class="aff">College of Connected Computing, Vanderbilt University</span><a href="mailto:douglas.h.fisher@vanderbilt.edu">douglas.h.fisher@vanderbilt.edu</a></li>
+    </ul>
+    <p class="small-note">Questions about the track, or whether a paper fits? Email any of the organizers.</p>
+  </section>
+</main>
+
+<aside class="side" aria-label="Conference details and important dates">
+  <div class="panel-stack">
+    <div class="panel" id="panel-conf" aria-hidden="false">
+      <div class="pager" aria-hidden="true"><span class="on"></span><span></span></div>
+      <figure class="tree-fig">
+        <svg class="tree anim" viewBox="20 15 480 410" role="img" aria-labelledby="tree-title tree-desc">
+          <title id="tree-title">A search tree built from generated candidates</title>
+          <desc id="tree-desc">A root node expands into candidate continuations. Most branches are tested and pruned; one highlighted path leads to a goal node.</desc>
+          <path class="e pr l1" d="M260 40 L110 150"/>
+          <path class="e l1" d="M260 40 L260 150"/>
+          <path class="e l1" d="M260 40 L410 150"/>
+          <path class="e pr l2" d="M110 150 L60 265"/>
+          <path class="e pr l2" d="M110 150 L160 265"/>
+          <path class="e pr l2" d="M260 150 L215 265"/>
+          <path class="e l2" d="M260 150 L305 265"/>
+          <path class="e pr l2" d="M410 150 L370 265"/>
+          <path class="e pr l2" d="M410 150 L455 265"/>
+          <path class="e pr l3" d="M305 265 L255 380"/>
+          <path class="e l3" d="M305 265 L355 380"/>
+          <path class="path" style="--len:390" d="M260 40 L260 150 L305 265 L355 380"/>
+          <circle class="n root" cx="260" cy="40" r="15"/>
+          <circle class="n pr l1" cx="110" cy="150" r="13"/>
+          <circle class="n l1" cx="260" cy="150" r="13"/>
+          <circle class="n l1" cx="410" cy="150" r="13"/>
+          <circle class="n pr l2" cx="60" cy="265" r="11"/>
+          <circle class="n pr l2" cx="160" cy="265" r="11"/>
+          <circle class="n pr l2" cx="215" cy="265" r="11"/>
+          <circle class="n l2" cx="305" cy="265" r="11"/>
+          <circle class="n pr l2" cx="370" cy="265" r="11"/>
+          <circle class="n pr l2" cx="455" cy="265" r="11"/>
+          <circle class="n pr l3" cx="255" cy="380" r="10"/>
+          <circle class="goal" cx="355" cy="380" r="14"/>
+          <g class="x">
+            <path d="M180 90 l10 10 m0 -10 l-10 10"/>
+            <path d="M84 196 l10 10 m0 -10 l-10 10"/>
+            <path d="M135 196 l10 10 m0 -10 l-10 10"/>
+            <path d="M228 196 l10 10 m0 -10 l-10 10"/>
+            <path d="M383 196 l10 10 m0 -10 l-10 10"/>
+            <path d="M424 196 l10 10 m0 -10 l-10 10"/>
+            <path d="M275 312 l10 10 m0 -10 l-10 10"/>
+          </g>
+        </svg>
+        <figcaption>
+          <ul class="legend">
+            <li><span class="sw gen" aria-hidden="true"></span>generated</li>
+            <li><span class="sw pru" aria-hidden="true"></span>pruned</li>
+            <li><span class="sw sel" aria-hidden="true"></span>committed</li>
+          </ul>
+        </figcaption>
+      </figure>
+      <h2>The conference</h2>
+      <dl>
+        <div><dt>Event</dt><dd><a href="https://www.flairs-40.info/">FLAIRS-40</a>, the 40th International FLAIRS Conference</dd></div>
+        <div><dt>When and where</dt><dd>May 24–27, 2027, St. Pete Beach, Florida</dd></div>
+        <div><dt>Proceedings</dt><dd>Florida Online Journals, indexed in DBLP and Scopus</dd></div>
+        <div><dt>Review</dt><dd>Double-blind, by the track program committee</dd></div>
+      </dl>
+      <div class="side-actions">
+        <a class="btn-on-ink primary" href="https://easychair.org/conferences/?conf=flairs40">Submit on EasyChair</a>
+        <a class="btn-on-ink" href="https://www.flairs-40.info/">FLAIRS-40 conference site</a>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-dates" aria-hidden="true">
+      <div class="pager" aria-hidden="true"><span></span><span class="on"></span></div>
+      <h2>Important dates</h2>
+      <div class="next-up" id="next-up" hidden></div>
+      <ol class="side-dates dates-list">
+        <li data-date="2027-01-22"><time datetime="2027-01-22">Jan 22</time><span class="what">Abstract registration (required)</span></li>
+        <li data-date="2027-02-01"><time datetime="2027-02-01">Feb 1</time><span class="what">Full and short papers</span></li>
+        <li data-date="2027-03-09"><time datetime="2027-03-09">Mar 9</time><span class="what">Acceptance notification</span></li>
+        <li data-date="2027-03-15"><time datetime="2027-03-15">Mar 15</time><span class="what">Poster papers</span></li>
+        <li data-date="2027-03-22"><time datetime="2027-03-22">Mar 22</time><span class="what">Poster notification</span></li>
+        <li data-date="2027-04-05"><time datetime="2027-04-05">Apr 5</time><span class="what">Camera-ready and author registration</span></li>
+        <li data-date="2027-05-27"><time datetime="2027-05-24">May 24–27</time><span class="what">Conference</span></li>
+      </ol>
+      <p class="note">All dates 2027, 23:59 AoE. See the <a href="https://www.flairs-40.info/important-dates">official dates page</a> for changes.</p>
+      <div class="side-actions">
+        <a class="btn-on-ink primary" href="https://easychair.org/conferences/?conf=flairs40">Submit on EasyChair</a>
+      </div>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><strong style="color:#fff">Deliberative and Generative AI: Hybrids and Foundations</strong></p>
+      <p>A special track of FLAIRS-40, St. Pete Beach, Florida, May 24–27, 2027.</p>
+    </div>
+    <div>
+      <p><a href="https://www.flairs-40.info/">FLAIRS-40 conference site</a></p>
+      <p><a href="https://easychair.org/conferences/?conf=flairs40">Submit on EasyChair</a></p>
+      <p><a href="paper/fisher-moore-roberts-acs2026.pdf">The motivating paper (PDF)</a></p>
+      <p><a href="cfp.txt">Plain-text call for papers</a></p>
+    </div>
+    <div>
+      <p><strong style="color:#fff">Contact</strong></p>
+      <p>Jesse T. Roberts: <a href="mailto:jtroberts@tntech.edu">jtroberts@tntech.edu</a></p>
+      <p>Kyle A. Moore: <a href="mailto:kyle.a.moore@vanderbilt.edu">kyle.a.moore@vanderbilt.edu</a></p>
+      <p>Douglas H. Fisher: <a href="mailto:douglas.h.fisher@vanderbilt.edu">douglas.h.fisher@vanderbilt.edu</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 1. Mark passed and next deadlines (deadline = 23:59 AoE, i.e. UTC-12).
+  var now = Date.now();
+  var nextInfo = null;
+  document.querySelectorAll('.dates-list').forEach(function(list){
+    var marked = false;
+    list.querySelectorAll('li[data-date]').forEach(function(li){
+      var end = Date.parse(li.getAttribute('data-date') + 'T23:59:00-12:00');
+      if (now > end) { li.classList.add('is-past'); }
+      else if (!marked) {
+        li.classList.add('is-next'); marked = true;
+        if (!nextInfo) nextInfo = { end: end, what: li.querySelector('.what').firstChild.textContent.trim(), when: new Date(li.getAttribute('data-date') + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) };
+      }
+    });
+  });
+  var box = document.getElementById('next-up');
+  if (box && nextInfo) {
+    var days = Math.ceil((nextInfo.end - now) / 86400000);
+    var lead = days <= 0 ? 'Due today' : (days === 1 ? 'Due in 1 day' : 'Due in ' + days + ' days');
+    box.innerHTML = '<span>Next deadline</span><b></b><span style="display:block"></span>';
+    box.querySelector('b').textContent = nextInfo.what;
+    box.lastChild.textContent = nextInfo.when + '. ' + lead + '.';
+    box.hidden = false;
+  }
+
+  // 2. Side column: conference details first, important dates once the reader reaches the call.
+  var conf = document.getElementById('panel-conf');
+  var dates = document.getElementById('panel-dates');
+  var call = document.getElementById('call');
+  if (!conf || !dates || !call) return;
+  function setPanel(showDates){
+    conf.setAttribute('aria-hidden', showDates ? 'true' : 'false');
+    dates.setAttribute('aria-hidden', showDates ? 'false' : 'true');
+    conf.inert = showDates; dates.inert = !showDates;
+  }
+  var showing = null;
+  function update(){
+    var showDates = call.getBoundingClientRect().top < window.innerHeight * 0.45;
+    if (showDates !== showing) { showing = showDates; setPanel(showDates); }
+  }
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+})();
+</script>
+</body>
+</html>
