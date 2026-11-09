@@ -2,7 +2,7 @@
 
 Call-for-papers site for the FLAIRS-40 special track (St. Pete Beach, FL, May 24–27, 2027).
 
-Live site: https://jessetnroberts.github.io/flairs-special-track/
+Live site: https://www.jessetnroberts.com/flairs-special-track/
 
 - Conference: https://www.flairs-40.info/
 - Submissions: https://easychair.org/conferences/?conf=flairs40 (choose this track)

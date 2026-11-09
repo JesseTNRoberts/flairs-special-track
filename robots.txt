@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jessetnroberts.github.io/flairs-special-track/sitemap.xml
+Sitemap: https://www.jessetnroberts.com/flairs-special-track/sitemap.xml

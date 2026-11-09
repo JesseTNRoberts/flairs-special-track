@@ -5,7 +5,7 @@ Special Track at FLAIRS-40, the 40th International Florida Artificial
 Intelligence Research Society Conference
 St. Pete Beach, Florida, USA, May 24-27, 2027
 
-Track page:      https://jessetnroberts.github.io/flairs-special-track/
+Track page:      https://www.jessetnroberts.com/flairs-special-track/
 Conference:      https://www.flairs-40.info/
 Submission site: https://easychair.org/conferences/?conf=flairs40
                  (select the "Deliberative and Generative AI: Hybrids and
@@ -15,27 +15,33 @@ Submission site: https://easychair.org/conferences/?conf=flairs40
 THE CALL
 ----------------------------------------------------------------------
 
-Deliberative AI, the classical, symbolic tradition of state-space search,
-proceeds through recursive generate-and-test cycles: candidates are
-proposed, evaluated, pruned, and refined toward a goal. Generative AI,
+Deliberative AI, typically in the form of state-space search, proceeds
+through recursive generate-and-test cycles: candidates are proposed,
+evaluated, pruned, and refined in pursuit of a goal or more general
+utilitarian ideal. Generative AI,
 epitomized by transformer-based large language models, is instead
 characterized by a weak or trivial test step, producing outputs by
 sampling from learned conditional probability distributions.
 
-A growing body of work treats these paradigms as complements rather than
-competitors. Search can structure and constrain LLM generation, and LLMs
+A growing body of work treats these paradigms as powerful and necessary
+complements. Search can structure and constrain LLM generation, and LLMs
 can serve as flexible components within a broader search process: as
-generators of successors, as scorers, or as tie-breakers. At the same
-time, an important question remains largely open: how, if at all, does
+generators of successors, as scorers of states, and as tie-breakers.
+Very often, deliberative, Type 2 methods are exploited during machine
+learning to push knowledge from the test phase increasingly into the
+generate phase, which results in powerful generative-dominant systems
+when learning is over massive data. At the same time, an important,
+inverse question remains largely open: how, if at all, does
 deliberative, Type 2 behavior emerge from a fundamentally generative,
 Type 1 system?
 
 Following "State-Space Search and Transformer-Based AI Hybridizations"
-(Fisher, Moore, and Roberts, ACS 2026; available on the track page),
-this special track invites papers
-that explore, build, evaluate, or theorize about hybrid architectures
-combining state-space search and transformer-based generation. It equally
-invites papers on the foundational question of how Type 1 and Type 2
+(Fisher, Moore, and Roberts; available on the track page) and an invited
+talk by Vaishak Belle, both at ACS 2026, as well as the foundational
+research these works draw on, this special track invites papers that
+explore, build, evaluate, or theorize about hybrid architectures that
+combine deliberative and transformer-based generative AI. It equally
+invites papers on foundational questions of how Type 1 and Type 2
 processing relate to and give rise to one another. We welcome systems
 papers, empirical studies, and position or theoretical contributions
 addressing questions such as:
